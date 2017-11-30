@@ -1,8 +1,8 @@
 class Nv < Formula
   desc "Lightweight utility to load context specific environment variables"
   homepage "https://github.com/jcouture/nv"
-  url "https://github.com/jcouture/nv/archive/0.0.3.tar.gz"
-  sha256 "21eced7a32b1e96dc67a8d402f381b8da3db3124823b70911d50cf8432078346"
+  url "https://github.com/jcouture/nv/archive/1.0.0.tar.gz"
+  sha256 "e5bf62bc897e73c303520fd40cb9555de5b99a139857f9551061e98c568a27df"
 
   head "https://github.com/jcouture/nv.git"
 
