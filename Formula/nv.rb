@@ -6,7 +6,6 @@ class Nv < Formula
   desc "Lightweight utility to load context specific environment variables"
   homepage "https://github.com/jcouture/nv"
   version "2.1.0"
-  bottle :unneeded
 
   on_macos do
     if Hardware::CPU.intel?
