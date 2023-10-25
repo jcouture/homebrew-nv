@@ -5,20 +5,20 @@
 class Nv < Formula
   desc "Lightweight utility to load context specific environment variables"
   homepage "https://github.com/jcouture/nv"
-  version "2.1.1"
+  version "2.2.0"
 
   on_macos do
     if Hardware::CPU.arm?
-      url "https://github.com/jcouture/nv/releases/download/2.1.1/nv_2.1.1_darwin_arm64.tar.gz"
-      sha256 "edb88d8f9077b5c2fb304a2226b27a3422664f211e3403342ba3079d75055664"
+      url "https://github.com/jcouture/nv/releases/download/2.2.0/nv_2.2.0_darwin_arm64.tar.gz"
+      sha256 "abbf4d537479c09b36bf13b937bbab6ffc2913d89cb03819fe77367731b3db84"
 
       def install
         bin.install "nv"
       end
     end
     if Hardware::CPU.intel?
-      url "https://github.com/jcouture/nv/releases/download/2.1.1/nv_2.1.1_darwin_amd64.tar.gz"
-      sha256 "3ce370bfc4910f44a78661fec232c3bc64b60eee673ce511a54fb068be7482cd"
+      url "https://github.com/jcouture/nv/releases/download/2.2.0/nv_2.2.0_darwin_amd64.tar.gz"
+      sha256 "4878190db337b586a919f0936409b8afb2e784f0a1179027704860431a10ba1d"
 
       def install
         bin.install "nv"
@@ -28,24 +28,24 @@ class Nv < Formula
 
   on_linux do
     if Hardware::CPU.arm? && !Hardware::CPU.is_64_bit?
-      url "https://github.com/jcouture/nv/releases/download/2.1.1/nv_2.1.1_linux_armv6.tar.gz"
-      sha256 "f726df8eb7e080a4667bef0311e0f95d923078978a9ff44ca19077eee269b721"
+      url "https://github.com/jcouture/nv/releases/download/2.2.0/nv_2.2.0_linux_armv6.tar.gz"
+      sha256 "a58c1799c7dbd37e059fdd4714e9f7dcd56ded464080fa6d092bb940ceda9d95"
 
       def install
         bin.install "nv"
       end
     end
     if Hardware::CPU.intel?
-      url "https://github.com/jcouture/nv/releases/download/2.1.1/nv_2.1.1_linux_amd64.tar.gz"
-      sha256 "f22a4863bd4163097fef15fbe78ab42cd0eaa6677874710bb34e5dc6d559a6fe"
+      url "https://github.com/jcouture/nv/releases/download/2.2.0/nv_2.2.0_linux_amd64.tar.gz"
+      sha256 "38920f840cf709cbb5d1cdbdffbae3e4d3937a70dc30564b409932ccb2d36cb1"
 
       def install
         bin.install "nv"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/jcouture/nv/releases/download/2.1.1/nv_2.1.1_linux_arm64.tar.gz"
-      sha256 "f1eb45a93319a7761ccaad1d7d485cce7e4a93263926a6ca783f7bc116a79a40"
+      url "https://github.com/jcouture/nv/releases/download/2.2.0/nv_2.2.0_linux_arm64.tar.gz"
+      sha256 "ce8d85fd7299ab29758202e7902a7b7eb8bbfd8d64461aa189e2722796aa5f3e"
 
       def install
         bin.install "nv"
